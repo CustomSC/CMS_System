@@ -5,7 +5,7 @@ public class ClassDTO {
 	private int cNo; //개설강좌 고유번호
 	private String className; //개설강좌명
 	private String cPro; //담당교수
-	private String time; //시간
+	private String cTime; //시간
 	
 	public int getcNo() {
 		return cNo;
@@ -25,12 +25,11 @@ public class ClassDTO {
 	public void setcPro(String cPro) {
 		this.cPro = cPro;
 	}
-	public String getTime() {
-		return time;
+	public String getcTime() {
+		return cTime;
 	}
-	public void setTime(String time) {
-		this.time = time;
+	public void setcTime(String cTime) {
+		this.cTime = cTime;
 	}
-	
 	
 }

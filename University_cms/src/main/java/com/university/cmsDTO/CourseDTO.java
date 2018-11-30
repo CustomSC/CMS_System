@@ -7,7 +7,7 @@ public class CourseDTO {
 	private String sNo; //수강 학생
 	private String grade; //성적
 	private String cPro; //담당교수
-	private String time; //시간
+	private String cTime; //시간
 	
 	public int getrNo() {
 		return rNo;
@@ -39,11 +39,11 @@ public class CourseDTO {
 	public void setcPro(String cPro) {
 		this.cPro = cPro;
 	}
-	public String getTime() {
-		return time;
+	public String getcTime() {
+		return cTime;
 	}
-	public void setTime(String time) {
-		this.time = time;
+	public void setcTime(String cTime) {
+		this.cTime = cTime;
 	}
 	
 	
