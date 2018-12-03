@@ -15,7 +15,6 @@
 			$("#pw").val("");
             //라디오 버튼 값을 가져온다.
             var ch_val = this.value;
-            console.log(ch_val);
             if(ch_val == "교수") {
             	$('#num').attr('placeholder','Professor ID');
             	$('#num').attr('name','pNum');
@@ -45,7 +44,7 @@
 	    <input type="text" id="num" name="sNum" placeholder="Student Id"/>
 	    <input type="password" id="pw" name="sPw" placeholder="password"/>
 	    <button type="submit">login</button>
-	    <p class="message">Not registered? <a href="#">Create an account</a></p>
+	    <p class="message">Not registered? <a href="join.jsp">Create an account</a></p>
 	  </form>
 	</div>
 </body>
