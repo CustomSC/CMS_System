@@ -1,3 +1,5 @@
+create database unicms default character set utf8;
+
 create table student (
 	sNo int auto_increment primary key,
 	sNum varchar(10) not null,
@@ -9,7 +11,7 @@ create table student (
 	sEmail varchar(30) not null,
 	sAddr varchar(50) not null,
 	sStatus varchar(20) not null
-);
+)charset=utf8;
 
 create table professor (
 	pNo int auto_increment primary key,
@@ -22,14 +24,14 @@ create table professor (
 	pEmail varchar(30) not null,
 	pAddr varchar(50) not null,
 	pStatus varchar(20) not null
-);
+)charset=utf8;
 
 create table class (
 	cNo int auto_increment primary key,
 	className varchar(30) not null,
 	cPro varchar(10) not null,
 	cTime varchar(20) not null
-);
+)charset=utf8;
 
 create table course (
 	rNo int auto_increment primary key,
@@ -38,4 +40,4 @@ create table course (
 	grade varchar(10),
 	cPro varchar(10) not null,
 	cTime varchar(20) not null
-);
+)charset=utf8;

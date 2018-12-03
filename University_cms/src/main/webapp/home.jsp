@@ -10,7 +10,6 @@
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#num').attr('placeholder','Student ID');
 		$("input[name='ch']:radio").change(function () {
 			$("#num").val("");
 			$("#pw").val("");
@@ -19,8 +18,12 @@
             console.log(ch_val);
             if(ch_val == "교수") {
             	$('#num').attr('placeholder','Professor ID');
+            	$('#num').attr('name','pNum');
+            	$('#pw').attr('name','pPw');
             }else if(ch_val == "학생") {
             	$('#num').attr('placeholder','Student ID');
+            	$('#num').attr('name','sNum');
+            	$('#pw').attr('name','sPw');
             }
         });
 	});
@@ -38,10 +41,10 @@
 	  	<input type="radio" name="ch" value="학생" checked="checked"/>학생
 	  	<input type="radio" name="ch" value="교수"/>교수
 	  </div>
-	  <form class="login-form">
-	    <input type="text" id="num"/>
-	    <input type="password" id="pw" placeholder="password"/>
-	    <button>login</button>
+	  <form class="login-form" action="result.jsp">
+	    <input type="text" id="num" name="sNum" placeholder="Student Id"/>
+	    <input type="password" id="pw" name="sPw" placeholder="password"/>
+	    <button type="submit">login</button>
 	    <p class="message">Not registered? <a href="#">Create an account</a></p>
 	  </form>
 	</div>
