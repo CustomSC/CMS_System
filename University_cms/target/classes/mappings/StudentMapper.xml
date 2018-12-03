@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="studentSQL">
+
+	<resultMap type="studentDTO" id="rsMap">
+		<result property="sNo" column="sNo" />
+		<result property="sNum" column="sNum" />
+		<result property="sPw" column="sPw" />
+		<result property="sName" column="sName" />
+		<result property="sGender" column="sGender" />
+		<result property="sMajor" column="sMajor" />
+		<result property="sTel" column="sTel" />
+		<result property="sEmail" column="sEmail" />
+		<result property="sAddr" column="sAddr" />
+		<result property="sStatus" column="sStatus" />
+	</resultMap>
+		
+	<insert id="insert" parameterType="studentDTO">
+		insert into student 
+		(sNum,sPw,sName,sGender,sMajor,sTel,sEmail,sAddr,sStatus) 
+		values 
+		(#{sNum},#{sPw},#{sName},#{sGender},#{sMajor},#{sTel},#{sEmail},#{sAddr},#{sStatus})
+	</insert>
+
+</mapper>

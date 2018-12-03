@@ -6,8 +6,8 @@ public class StudentDTO {
 	private String sNum; //학번
 	private String sPw; //학생 비밀번호
 	private String sName; //학생 이름
-	private String sMajor; //학생 전공
-	private String sRRN; //학생 주민번호
+	private String sGender; //학생 성별
+	private String sMajor; //학생 전공(단과대학,전공)
 	private String sTel; //학생 전화번호
 	private String sEmail; //학생 이메일
 	private String sAddr; //학생 주소
@@ -37,11 +37,17 @@ public class StudentDTO {
 	public void setsName(String sName) {
 		this.sName = sName;
 	}
-	public String getsRRN() {
-		return sRRN;
+	public String getsGender() {
+		return sGender;
 	}
-	public void setsRRN(String sRRN) {
-		this.sRRN = sRRN;
+	public void setsGender(String sGender) {
+		this.sGender = sGender;
+	}
+	public String getsMajor() {
+		return sMajor;
+	}
+	public void setsMajor(String sMajor) {
+		this.sMajor = sMajor;
 	}
 	public String getsTel() {
 		return sTel;
@@ -67,11 +73,6 @@ public class StudentDTO {
 	public void setsStatus(String sStatus) {
 		this.sStatus = sStatus;
 	}
-	public String getsMajor() {
-		return sMajor;
-	}
-	public void setsMajor(String sMajor) {
-		this.sMajor = sMajor;
-	}
+	
 	
 }

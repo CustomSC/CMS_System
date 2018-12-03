@@ -104,14 +104,14 @@
 <body>
 	<div class="container">
 		<div style="width: 50%; margin: auto; padding: 20px;">
-			<form>
+			<form action="insert">
 			  <fieldset>
 			    <legend>학생정보등록</legend>
 			    <hr>
 			    
 			    <div class="form-group">
 			      <label for="student id">Student Id</label>
-			      <input type="text" class="form-control" id="sNum" aria-describedby="emailHelp" placeholder="Student Id">
+			      <input type="text" class="form-control" id="sNum" name="sNum" aria-describedby="emailHelp" placeholder="Student Id">
 			      <small id="emailHelp" class="form-text text-muted">부여받은 학번을 입력해 주세요.</small>
 			    </div>
 			    
@@ -122,26 +122,26 @@
 			    
 			    <div class="form-group">
 			      <label for="password2">Password Confirm</label>
-			      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password Confirm">
+			      <input type="password" class="form-control" id="exampleInputPassword2" name="sPw" placeholder="Password Confirm">
 			      <div class="valid-feedback"></div>
 			    </div>
 			    
 			    <div class="form-group">
 			      <label for="name">Name</label>
-			      <input type="text" class="form-control" id="name" placeholder="Name">
+			      <input type="text" class="form-control" id="name" name="sName" placeholder="Name">
 			    </div>
 			    
 			    <fieldset class="form-group">
 			      <label class="col-form-label col-form-label-lg" for="inputLarge">Gender</label>
 			      <div class="form-check">
 			        <label class="form-check-label">
-			          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="male" checked="">
+			          <input type="radio" class="form-check-input" name="sGender" id="optionsRadios1" value="male" checked="">
 			          	Male
 			        </label>
 			      </div>
 			      <div class="form-check">
 			      <label class="form-check-label">
-			          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="female">
+			          <input type="radio" class="form-check-input" name="sGender" id="optionsRadios2" value="female">
 			          	Female
 			        </label>
 			      </div>
@@ -151,22 +151,22 @@
 			      <label for="major">Major</label>
 			      <select class="form-control" id="exampleSelect1"></select>
 			      <br>
-			      <select class="form-control" id="exampleSelect2"></select>
+			      <select class="form-control" id="exampleSelect2" name="sMajor"></select>
 			    </div>
 			    
 			    <div class="form-group">
 			      <label for="phone">Phone Number</label>
-			      <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+			      <input type="text" class="form-control" id="phone" name="sTel" placeholder="Phone Number">
 			    </div>
 			    
 			    <div class="form-group">
 			      <label for="email1">E-mail</label>
-			      <input type="text" class="form-control" id="email" placeholder="E-mail">
+			      <input type="text" class="form-control" id="email" name="sEmail" placeholder="E-mail">
 			    </div>
 			    
 			    <div class="form-group">
 			      <label for="address">Address</label>
-			      <input type="text" class="form-control" id="address" placeholder="Address">
+			      <input type="text" class="form-control" id="address" name="sAddr" placeholder="Address">
 			    </div>
 			    
 			    <button type="submit" class="btn btn-primary btn-block">Submit</button>
