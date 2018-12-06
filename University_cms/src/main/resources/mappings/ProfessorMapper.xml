@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="professorSQL">
+
+	<resultMap type="professorDTO" id="rsMap">
+		<result property="pNo" column="pNo" />
+		<result property="pNum" column="pNum" />
+		<result property="pPw" column="pPw" />
+		<result property="pName" column="pName" />
+		<result property="pGender" column="pGender" />
+		<result property="pMajor" column="pMajor" />
+		<result property="pTel" column="pTel" />
+		<result property="pEmail" column="pEmail" />
+		<result property="pAddr" column="pAddr" />
+		<result property="pStatus" column="pStatus" />
+	</resultMap>
+		
+	<insert id="insert" parameterType="professorDTO">
+		insert into professor 
+		(pNum,pPw,pName,pGender,pMajor,pTel,pEmail,pAddr,pStatus) 
+		values 
+		(#{pNum},#{pPw},#{pName},#{pGender},#{pMajor},#{pTel},#{pEmail},#{pAddr},#{pStatus})
+	</insert>
+	
+	<select id="select" resultType="professorDTO">
+		select * from professor ORDER BY pNo DESC;
+	</select>
+
+</mapper>

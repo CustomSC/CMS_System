@@ -23,5 +23,9 @@
 		values 
 		(#{sNum},#{sPw},#{sName},#{sGender},#{sMajor},#{sTel},#{sEmail},#{sAddr},#{sStatus})
 	</insert>
+	
+	<select id="select" resultType="studentDTO">
+		select * from student ORDER BY sNo DESC;
+	</select>
 
 </mapper>

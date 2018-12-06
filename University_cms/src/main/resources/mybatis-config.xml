@@ -5,9 +5,11 @@
 <configuration>
 	<typeAliases>
 		<typeAlias alias="studentDTO" type="com.university.cmsDTO.StudentDTO" />
+		<typeAlias alias="professorDTO" type="com.university.cmsDTO.ProfessorDTO" />
 	</typeAliases>
 
 	<mappers>
 		<mapper resource="mappings/StudentMapper.xml" />
+		<mapper resource="mappings/ProfessorMapper.xml" />
 	</mappers>
 </configuration>

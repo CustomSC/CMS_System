@@ -30,7 +30,7 @@
 </head>
 <body>
 	<div class="container">
-	  <div class="info">
+	  <div class="info" style="margin: 150px auto 30px;">
 	    <h1>Login</h1>
 	  </div>
 	</div>
@@ -40,11 +40,11 @@
 	  	<input type="radio" name="ch" value="학생" checked="checked"/>학생
 	  	<input type="radio" name="ch" value="교수"/>교수
 	  </div>
-	  <form class="login-form" action="result.jsp">
+	  <form class="login-form" method="post" action="result.jsp">
 	    <input type="text" id="num" name="sNum" placeholder="Student Id"/>
 	    <input type="password" id="pw" name="sPw" placeholder="password"/>
 	    <button type="submit">login</button>
-	    <p class="message">Not registered? <a href="join.jsp">Create an account</a></p>
+	    <p class="message">Not registered? <a href="select.jsp">Create an account</a></p>
 	  </form>
 	</div>
 </body>

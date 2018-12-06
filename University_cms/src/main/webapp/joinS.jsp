@@ -104,7 +104,7 @@
 <body>
 	<div class="container">
 		<div style="width: 50%; margin: auto; padding: 20px;">
-			<form action="insert">
+			<form action="insert/student" method="post">
 			  <fieldset>
 			    <legend>학생정보등록</legend>
 			    <hr>
@@ -149,9 +149,9 @@
 			    
 			    <div class="form-group">
 			      <label for="major">Major</label>
-			      <select class="form-control" id="exampleSelect1"></select>
+			      <select class="form-control" id="exampleSelect1" name="major1"></select>
 			      <br>
-			      <select class="form-control" id="exampleSelect2" name="sMajor"></select>
+			      <select class="form-control" id="exampleSelect2" name="major2"></select>
 			    </div>
 			    
 			    <div class="form-group">

@@ -6,8 +6,8 @@ public class ProfessorDTO {
 	private String pNum; //교수번호
 	private String pPw; //교수 비밀번호
 	private String pName; //교수 이름
+	private String pGender; //교수 성별
 	private String pMajor; //소속대학
-	private String pRRN; //교수 주민번호
 	private String pTel; //교수 전화번호
 	private String pEmail; //교수 이메일
 	private String pAddr; //교수 주소
@@ -37,17 +37,17 @@ public class ProfessorDTO {
 	public void setpName(String pName) {
 		this.pName = pName;
 	}
+	public String getpGender() {
+		return pGender;
+	}
+	public void setpGender(String pGender) {
+		this.pGender = pGender;
+	}
 	public String getpMajor() {
 		return pMajor;
 	}
 	public void setpMajor(String pMajor) {
 		this.pMajor = pMajor;
-	}
-	public String getpRRN() {
-		return pRRN;
-	}
-	public void setpRRN(String pRRN) {
-		this.pRRN = pRRN;
 	}
 	public String getpTel() {
 		return pTel;
@@ -73,6 +73,5 @@ public class ProfessorDTO {
 	public void setpStatus(String pStatus) {
 		this.pStatus = pStatus;
 	}
-	
 	
 }
